@@ -20,4 +20,5 @@
 3. Press the dropdown and select the script that says 'KRTDL_Text.lua.'
 
 4. If your screen looks something like this... ![alt text](krtdl_text_example.PNG)
+
 then you've succeeded!
