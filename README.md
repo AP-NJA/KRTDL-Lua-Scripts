@@ -11,7 +11,7 @@
 
 4. Paste what you copied earlier.
 
-**Running the Scripts**
+**Running the Script(s)**
 
 1. Open Lua Core and load KRTDL. It **must** be KRTDL with Game ID *SUKE01*, or else this will not work (in the future, I will try to make this possible for other regional versions). The game must also be running.
 
