@@ -6,7 +6,7 @@ local core = require("KRTDL_Core")
 ----- GLOBAL VARIABLES -----
 local lastIndex = 0
 local startRNG = 0
-local startFrame = 174
+local startFrame = 174 -- set this variable to the frame when timing your TAS starts
 local current = core.getRNG()
 ----- Add an underscore (_) at the beginning of the script name to execute on game startup! -----
 function onScriptStart()
@@ -37,7 +37,7 @@ function onScriptUpdate()
 
     local text = ""
     local bossDataText = ""
-    local lockoutTableText = ""
+    local inactionableTimerText = ""
 
     text = text .. string.format("\nFrame: %d\n", frame)
     text = text .. "===== Position =====\n"
@@ -64,7 +64,8 @@ function onScriptUpdate()
 
     for secondIndex = 1, core.getObjectCount() do
         if (core.getObjectInactionableTables(secondIndex) ~= 0) then
-            lockoutTableText = lockoutTableText .. string.format("Inactionable Timer: %d\n", 
+            inactionableTimerText = inactionableTimerText .. string.format("Inactionable Timer #%d: %d\n", 
+            secondIndex, 
             core.getObjectInactionableTables(secondIndex))
         end
     end
@@ -75,7 +76,7 @@ function onScriptUpdate()
     end
 
     if (core.getObjectCount() >= 1) then
-        text = text .. string.format("%s", lockoutTableText)
+        text = text .. string.format("%s", inactionableTimerText)
     end
 
     text = text .. "===== Misc. =====\n"
