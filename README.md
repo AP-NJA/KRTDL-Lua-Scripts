@@ -11,13 +11,13 @@
 
 4. Paste what you copied earlier.
 
-**Running the Script(s)**
+**Running a Script*
 
 1. Open Lua Core and load KRTDL. It **must** be KRTDL with Game ID *SUKE01*, or else this will not work (in the future, I will try to make this possible for other regional versions). The game must also be running.
 
 2. Go to the toolbar at the top, and navigate to Tools -> Execute Script.
 
-3. Press the dropdown and select the script that says 'KRTDL_Text.lua.'
+3. Press the dropdown and select a script. To make sure things work as intended, the KRTDL_Text.lua script will be used as a baseline.
 
 4. If your screen looks something like this... ![alt text](krtdl_text_example.PNG)
 
